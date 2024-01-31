@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">RateMate</string>
+  <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
+  <string name="expo_splash_screen_status_bar_translucent" translatable="false">false</string>
+  <string name="facebook_app_id">778659529193110</string>
+  <string name="facebook_client_token">e4d24b48a27dbd6470da5aa65a44bcf0</string>
+  <string name="fb_login_protocol_scheme">fb778659529193110</string>
+</resources>

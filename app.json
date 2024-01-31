@@ -2,12 +2,16 @@
   "expo": {
     "name": "RateMate",
     "slug": "RateMate",
-    "version": "1.0.0",
+    "privacy": "unlisted",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "3.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./src/assets/images/app-logo.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./src/assets/images/RATE_MATE_LOGO-01@_splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -15,16 +19,41 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.ratemate.app",
+      "buildNumber": "26",
+      "supportsTablet": false,
+      "usesAppleSignIn": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+      "package": "com.ratemate.app",
+      "versionCode": 25,
+      "softwareKeyboardLayoutMode": "pan",
+      "permissions": []
+    },
+    "description": "",
+    "extra": {
+      "eas": {
+        "projectId": "efd3d838-e21c-45d2-a809-ee8bfd011fbe"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      [ 
+        "expo-build-properties",
+        { 
+          "ios": {
+            "useFrameworks": "static" 
+          }
+        }
+      ],
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "778659529193110",
+          "clientToken": "e4d24b48a27dbd6470da5aa65a44bcf0",
+          "displayName": "ratemate",
+          "scheme": "fb778659529193110"
+        }
+      ]
+    ]
   }
 }
